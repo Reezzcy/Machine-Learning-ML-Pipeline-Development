@@ -1,0 +1,14 @@
+# Project 1: Spam Detection
+Name: Nicolas Debrito
+
+Username dicoding: reezzy
+
+| |Description |
+| ----------- | ----------- |
+| Dataset | [Spam_Detection](https://www.kaggle.com/datasets/kiarashkarimi/spam-detection) |
+| Problem | Spam messages are a problem because they disrupt users' productivity by flooding their inboxes with unwanted and often irrelevant messages. As a result, users are forced to spend extra time sorting and deleting these messages, which could have been used for more productive activities. In addition, spam messages often contain content that can compromise personal security, such as phishing attempts that seek to steal sensitive information or malware that can damage users' devices. Users may unknowingly click on malicious links or download attachments that could lead to damage to their systems or theft of personal data. Given the many negative impacts caused by spam messages, it is important to develop an effective classification model to distinguish between spam and non-spam messages. |
+| Machine learning solutions | Create a model that can classify spam messages and not. This model can be used to help users filter incoming messages that contain spam messages. |
+| Processing method | Data processing is done on Transform by normalising uppercase to lowercase conversion and Trainer by standardising ‘lower_and_strip_punctuation’ to remove punctuation. Labels are also converted to numeric 0 (ham message) and 1 (spam message). |
+| Model architecture | The model consists of several layers, namely, input to receive data, TextVectorisation to convert text into numerical values that can be processed by the model, Embedding to create sequences, GlobalAveragePooling to reduce dimensions, Dense to process features, and output to produce classification. |
+| Evaluation metrics | The metrics used in this project are Area Under Curve to calculate the area under the Receiver Operating Characteristic (ROC) curve, False Positive for many classifications of negative data as positive, False Negative for many classifications of positive data as negative, True Positive for many classifications that are positive, True Negative for many classifications that are negative, and Binary Accuracy to measure the proportion of correct predictions out of the total predictions made by the model in a binary classification problem. |
+| Model performance | In the Traing process the val_binary_accuracy of the stored model is 0.99250 which indicates the accuracy of the model is very high, besides that in the Evaluator the performance obtained is also very high with an overall binary_accuracy of 0.989, AUC 0.983, False Negative (7), False Positive (6), True Negative (1045), and True Positive (129). Through the model performance measurement results, it can be concluded that the model has functioned very well with very high accuracy to predict spam and non-spam. |
